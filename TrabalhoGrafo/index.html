@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Caminho Mais Barato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Caminho Mais Barato</h2>
+    <label>Capital de Origem:
+        <select id="origem"></select>
+    </label>
+    <label>Capital de Destino:
+        <select id="destino"></select>
+    </label>
+    <label>Preço do Combustível (R$):
+        <input type="number" id="precoCombustivel" step="0.01" value="5.00">
+    </label>
+    <label>Autonomia (Km/L):
+        <input type="number" id="autonomia" step="0.1" value="10">
+    </label>
+    <button onclick="calcular()">Calcular</button>
+
+    <div class="resultado" id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
